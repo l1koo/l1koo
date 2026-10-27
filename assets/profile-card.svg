@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="l1kko — manga character sheet">
+  <defs>
+    <pattern id="cardDots" width="11" height="11" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff"/>
+    </pattern>
+    <linearGradient id="cardFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.65" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.85"/>
+    </linearGradient>
+    <mask id="cardMask">
+      <rect x="900" y="0" width="300" height="400" fill="url(#cardFade)"/>
+    </mask>
+    <pattern id="photoDots" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#000000"/>
+    </pattern>
+    <linearGradient id="photoFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="photoMask">
+      <rect x="70" y="190" width="230" height="90" fill="url(#photoFade)"/>
+    </mask>
+    <clipPath id="photoClip">
+      <rect x="48" y="48" width="260" height="260"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="400" fill="#000000"/>
+  <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
+
+  <g>
+    <rect x="900" y="0" width="300" height="400" fill="url(#cardDots)" opacity="0.3" mask="url(#cardMask)"/>
+    <g stroke="#ffffff" stroke-width="1" opacity="0.045">
+      <line x1="1200" y1="-40" x2="900" y2="440"/>
+      <line x1="1200" y1="0" x2="940" y2="460"/>
+      <line x1="1200" y1="40" x2="980" y2="480"/>
+      <line x1="1200" y1="80" x2="1020" y2="500"/>
+    </g>
+  </g>
+
+  <!-- photo panel -->
+  <rect x="48" y="48" width="260" height="260" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+  <g clip-path="url(#photoClip)">
+    <!-- hair -->
+    <path d="M310 44 C 286 78, 258 98, 226 106" fill="none" stroke="#000000" stroke-width="11" stroke-linecap="round"/>
+    <path d="M310 72 C 288 98, 266 112, 240 120" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- eyebrow -->
+    <path d="M84 122 C 132 94, 226 94, 276 114" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- sclera -->
+    <path d="M82 178 C 116 132, 244 130, 278 174 C 244 220, 116 224, 82 178 Z" fill="#ffffff" stroke="#000000" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- iris -->
+    <circle cx="180" cy="176" r="30" fill="#000000"/>
+    <circle cx="170" cy="165" r="9" fill="#ffffff"/>
+    <circle cx="192" cy="186" r="4" fill="#ffffff"/>
+
+    <!-- upper lid + lashes -->
+    <path d="M78 176 C 116 118, 244 118, 282 170" fill="none" stroke="#000000" stroke-width="9" stroke-linecap="round"/>
+    <path d="M272 164 L 298 140 L 284 174 Z" fill="#000000"/>
+    <path d="M258 156 L 284 126 L 270 166 Z" fill="#000000"/>
+    <path d="M84 172 L 62 154 L 78 184 Z" fill="#000000"/>
+
+    <!-- lower lid -->
+    <path d="M96 202 C 136 226, 230 224, 266 198" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- halftone under eye -->
+    <path d="M92 210 Q 180 246 270 208 L 270 258 Q 180 282 92 248 Z" fill="url(#photoDots)" opacity="0.4" mask="url(#photoMask)"/>
+  </g>
+
+  <!-- photo caption -->
+  <rect x="48" y="268" width="260" height="40" fill="#000000"/>
+  <text x="64" y="287" font-family="'JetBrains Mono','Courier New',monospace" font-size="9" letter-spacing="3" fill="#ffffff">ID / 01</text>
+  <text x="64" y="301" font-family="'JetBrains Mono','Courier New',monospace" font-size="7" letter-spacing="2" fill="#71717a">MANGA DEV</text>
+  <text x="292" y="294" text-anchor="end" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="900" fill="#ffffff">l1kko</text>
+
+  <!-- right column -->
+  <text x="360" y="72" font-family="'JetBrains Mono','Courier New',monospace" font-size="10" letter-spacing="4" fill="#71717a">CHARACTER SHEET</text>
+  <text x="356" y="132" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="900" letter-spacing="-3" fill="#ffffff">l1kko</text>
+  <text x="360" y="162" font-family="'JetBrains Mono','Courier New',monospace" font-size="14" letter-spacing="4" fill="#a1a1aa">@l1koo</text>
+
+  <line x1="360" y1="184" x2="1130" y2="184" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- stat rows -->
+  <g font-family="'JetBrains Mono','Courier New',monospace">
+    <text x="360" y="216" font-size="10" letter-spacing="3" fill="#71717a">CLASS</text>
+    <text x="520" y="216" font-size="15" fill="#ffffff">DEVELOPER</text>
+    <line x1="360" y1="230" x2="1130" y2="230" stroke="#ffffff" stroke-opacity="0.12"/>
+
+    <text x="360" y="248" font-size="10" letter-spacing="3" fill="#71717a">LANGUAGES</text>
+    <text x="520" y="248" font-size="15" fill="#ffffff">PYTHON / JAVASCRIPT / PHP</text>
+    <line x1="360" y1="262" x2="1130" y2="262" stroke="#ffffff" stroke-opacity="0.12"/>
+
+    <text x="360" y="280" font-size="10" letter-spacing="3" fill="#71717a">FRONTEND</text>
+    <text x="520" y="280" font-size="15" fill="#ffffff">HTML / CSS / BOOTSTRAP</text>
+    <line x1="360" y1="294" x2="1130" y2="294" stroke="#ffffff" stroke-opacity="0.12"/>
+
+    <text x="360" y="312" font-size="10" letter-spacing="3" fill="#71717a">FRAMEWORK</text>
+    <text x="520" y="312" font-size="15" fill="#ffffff">AIOGRAM</text>
+    <line x1="360" y1="326" x2="1130" y2="326" stroke="#ffffff" stroke-opacity="0.12"/>
+
+    <text x="360" y="344" font-size="10" letter-spacing="3" fill="#71717a">TOOLS</text>
+    <text x="520" y="344" font-size="15" fill="#ffffff">GIT / VS CODE / GITHUB / FIGMA / LINUX</text>
+    <line x1="360" y1="358" x2="1130" y2="358" stroke="#ffffff" stroke-opacity="0.12"/>
+
+    <text x="360" y="376" font-size="10" letter-spacing="3" fill="#71717a">STATUS</text>
+    <circle cx="527" cy="371" r="4" fill="#ffffff"/>
+    <text x="540" y="376" font-size="15" fill="#ffffff">CODING</text>
+  </g>
+
+  <!-- vertical japanese -->
+  <g font-family="'Noto Sans CJK JP','Hiragino Sans','Yu Gothic',sans-serif" font-size="24" fill="#ffffff" fill-opacity="0.18" text-anchor="middle">
+    <text x="1160" y="90">開</text>
+    <text x="1160" y="122">発</text>
+    <text x="1160" y="154">者</text>
+  </g>
+
+  <!-- small corner marks -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.7">
+    <path d="M18 18 H44 M18 18 V44" fill="none"/>
+    <path d="M1182 18 H1156 M1182 18 V44" fill="none"/>
+    <path d="M18 382 H44 M18 382 V356" fill="none"/>
+    <path d="M1182 382 H1156 M1182 382 V356" fill="none"/>
+  </g>
+</svg>

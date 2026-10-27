@@ -5,6 +5,9 @@ on:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,8 +16,8 @@ jobs:
         with:
           github_user_name: l1koo
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=%23000000&color_dots=%23f4f4f5,%23d4d4d8,%23a1a1aa,%2352525b,%2327272a
+            dist/github-snake-dark.svg?color_snake=%23ffffff&color_dots=%2318181b,%233f3f46,%2371717a,%23a1a1aa,%23d4d4d8
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
