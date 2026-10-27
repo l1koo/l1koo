@@ -91,7 +91,3 @@
 <div align="center">
   <img src="assets/footer.svg" alt="Конец профиля — l1kko" width="100%" />
 </div>
-
-<div align="center">
-  <sub>Сделано чёрной тушью, белой бумагой и слишком большим количеством кофе.</sub>
-</div>
